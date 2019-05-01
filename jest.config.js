@@ -1,5 +1,5 @@
 module.exports = {
     coverageDirectory: "coverage",
     testEnvironment: "jest-environment-jsdom",
-    coverageReporters: ["json", "html", "lcov"],
+    coverageReporters: ["json", "html", "lcov", "text"],
 };
