@@ -8,17 +8,17 @@ export default class ImagesList {
 
     const apiKey = 'LlwQ1SQb4rPnfzdHZOFH2XO0Lq29kTEU';
     this.page = 0;
-    this.apiUrl = new URL('https://api.giphy.com/v1/gifs/search?limit=5&rating=G&lang=en');
+    this.apiUrl = new URL('https://api.giphy.com/v1/gifs/search?limit=20&rating=G&lang=en');
     this.apiUrl.searchParams.append('api_key', apiKey);
     this.apiUrl.searchParams.append('offset', this.page);
   }
 
   _render(data) {
     return data.map((obj) => {
-      const original = obj.images.original;
-      const src = original.url;
-      const width = original.width;
-      const height = original.height;
+      const image = obj.images.fixed_height;
+      const src = image.url;
+      const width = image.width;
+      const height = image.height;
 
       return `
         <li>
