@@ -10,7 +10,7 @@ describe('buttons', () => {
     `;
   });
 
-  it('should change list class when user clicks on button', () => {
+  it('should change list class when user clicks on the button', () => {
     new Buttons().initialize();
     document.getElementById('js-button-column').click();
 
@@ -19,7 +19,7 @@ describe('buttons', () => {
     ).toBeTruthy();
   });
 
-  it('should change list class when user clicks on button', () => {
+  it('should remove column class when user clicks on the button', () => {
     new Buttons().initialize();
     document.getElementById('js-button-column').click();
     document.getElementById('js-button-list').click();
