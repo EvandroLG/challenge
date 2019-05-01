@@ -15,5 +15,10 @@ form {
 }
 
 .list--column {
-  column-count: 3;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.list--column li {
+  flex: 1 0 25%;
 }

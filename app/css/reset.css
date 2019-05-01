@@ -33,6 +33,6 @@ a:visited {
     box-sizing: border-box;
 }
 
-input[type="submit"] {
+input[type="submit"], button {
     cursor: pointer;
 }
