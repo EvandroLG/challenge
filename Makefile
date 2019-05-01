@@ -1,5 +1,6 @@
 jest := node_modules/jest/bin/jest.js
 eslint := node_modules/eslint/bin/eslint.js
+server := node_modules/http-server/bin/http-server
 
 .SILENT:
 
@@ -13,4 +14,4 @@ test:
 	$(jest) --coverage
 
 run:
-	pushd app/; python -m SimpleHTTPServer 9000
+	$(server) app/ -p 9000
