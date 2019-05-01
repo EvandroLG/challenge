@@ -38,4 +38,28 @@ export default class ImagesList {
     this.elements.list.innerHTML = this._render(json.data);
     this.page = 0;
   }
+
+  async _updateNextPage() {
+    this.page = this.page + 1;
+    this.apiUrl.searchParams.set('offset', this.page);
+    const json = await http.get(this.apiUrl);
+
+    if (!json.data.length) {
+      return;
+    }
+
+    this.elements.list.innerHTML += this._render(json.data);
+  }
+
+  updateOnScroll() {
+    window.addEventListener('scroll', throttle(() => {
+      const docEl = document.documentElement;
+      const scrollTop = Math.max(docEl.scrollTop, document.body.scrollTop);
+      const isBottomOfWindow = (scrollTop + window.innerHeight) === docEl.offsetHeight;
+
+      if (isBottomOfWindow) {
+        this._updateNextPage();
+      }
+    }, 500));
+  }
 }
