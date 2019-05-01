@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`images-list should request and display more images 1`] = `
+"
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media0.giphy.com/media/3o7aTsNEoU0k75RWKI/giphy.gif\\" width=\\"480\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media0.giphy.com/media/3o7aTsNEoU0k75RWKI/giphy.gif\\" width=\\"480\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media0.giphy.com/media/3o7aTsNEoU0k75RWKI/giphy.gif\\" width=\\"480\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media0.giphy.com/media/3o7aTsNEoU0k75RWKI/giphy.gif\\" width=\\"480\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            "
+`;
+
+exports[`images-list should update list html with the datas provided by the api 1`] = `
+"
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media0.giphy.com/media/3o7aTsNEoU0k75RWKI/giphy.gif\\" width=\\"480\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media0.giphy.com/media/3o7aTsNEoU0k75RWKI/giphy.gif\\" width=\\"480\\" height=\\"270\\">
+                </li>
+            
+                <li>
+                    <img src=\\"https://media2.giphy.com/media/3o7aTIrTw1ckKbqra8/giphy.gif\\" width=\\"360\\" height=\\"270\\">
+                </li>
+            "
+`;
