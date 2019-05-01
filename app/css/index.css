@@ -9,3 +9,7 @@
 .list {
   margin-top: 10px;
 }
+
+.list--column {
+  column-count: 3;
+}
