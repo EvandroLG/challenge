@@ -1,0 +1,38 @@
+html, body, h1, a, p,
+span, ul, li, section, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+ul {
+    list-style: none;
+}
+
+* {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
