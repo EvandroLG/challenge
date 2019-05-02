@@ -35,6 +35,10 @@ export default class ImagesList {
     this.apiUrl.searchParams.set('q', value);
     const json = await http.get(this.apiUrl);
 
+    if (!json || !json.data.length) {
+      return;
+    }
+
     this.elements.list.innerHTML = this._render(json.data);
     this.page = 0;
   }
@@ -44,7 +48,8 @@ export default class ImagesList {
     this.apiUrl.searchParams.set('offset', this.page);
     const json = await http.get(this.apiUrl);
 
-    if (!json.data.length) {
+    if (!json || !json.data.length) {
+      this.page = this.page - 1;
       return;
     }
 
