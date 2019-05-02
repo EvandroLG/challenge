@@ -10,7 +10,11 @@ export default class Search {
   initialize() {
     this.elements.search.addEventListener('submit', (e) => {
       e.preventDefault();
-      this.imageList.update(this.elements.inplay.value);
+      const value = this.elements.inplay.value;
+
+      if (value) {
+        this.imageList.update(value);
+      }
     });
   }
 }

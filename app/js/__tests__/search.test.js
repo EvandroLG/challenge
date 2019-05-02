@@ -1,8 +1,7 @@
 import Search from '../search';
 
 describe('search', () => {
-  it('should call update method from ImageList object passing inplay value by parameter', () => {
-    const value = 'cars';
+  function verifySearch(value, callback) {
     document.body.innerHTML = `
       <form id="js-form">
           <input
@@ -21,7 +20,21 @@ describe('search', () => {
     const e = new Event('submit');
     document.getElementById('js-form').dispatchEvent(e);
 
-    expect(mockImageList.update).toHaveBeenCalled();
-    expect(mockImageList.update).toHaveBeenCalledWith(value);
+    callback(mockImageList.update);
+  }
+
+  it('should call update method from ImageList object passing inplay value by parameter', () => {
+    const value = 'cats';
+
+    verifySearch(value, (method) => {
+      expect(method).toHaveBeenCalled();
+      expect(method).toHaveBeenCalledWith(value);
+    });
+  });
+
+  it('should not call update method from ImageList object passing when value is empty', () => {
+    verifySearch('', (method) => {
+      expect(method).not.toHaveBeenCalled();
+    });
   });
 });
